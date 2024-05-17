@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/big.css">
+    <link rel="stylesheet" media="screen and (max-width: 899px)" href="styles/small.css">
     <title>Odin Calculator</title>
 </head>
 <body>
     <div id="calculator">
         <div class="row" id="display">
-            123456789
+            0
         </div>
         <div class="row">
             <div class="keys operators" id="keyCE">CE</div>
@@ -18,28 +19,29 @@
             <div class="keys operators" id="keyDivide">&div;</div>
         </div>
         <div class="row">
-            <div class="keys" id="key7">7</div>
-            <div class="keys" id="key8">8</div>
-            <div class="keys" id="key9">9</div>
+            <div class="keys numerical" id="key7">7</div>
+            <div class="keys numerical" id="key8">8</div>
+            <div class="keys numerical" id="key9">9</div>
             <div class="keys operators" id="keyMultiply">&times;</div>
         </div>
         <div class="row">
-            <div class="keys" id="key4">4</div>
-            <div class="keys" id="key5">5</div>
-            <div class="keys" id="key6">6</div>
-            <div class="keys operators" id="keyMinus">&minus;</div>
+            <div class="keys numerical" id="key4">4</div>
+            <div class="keys numerical" id="key5">5</div>
+            <div class="keys numerical" id="key6">6</div>
+            <div class="keys operators" id="keySubtract">&minus;</div>
         </div>
         <div class="row">
-            <div class="keys" id="key1">1</div>
-            <div class="keys" id="key2">2</div>
-            <div class="keys" id="key3">3</div>
-            <div class="keys operators" id="keyPlus">&plus;</div>
+            <div class="keys numerical" id="key1">1</div>
+            <div class="keys numerical" id="key2">2</div>
+            <div class="keys numerical" id="key3">3</div>
+            <div class="keys operators" id="keyAdd">&plus;</div>
         </div>
         <div class="row">
-            <div class="keys" id="key0">0</div>
+            <div class="keys numerical" id="key0">0</div>
             <div class="keys" id="keyDecimal">.</div>
-            <div class="keys" id="keyEquals">&equals;</div>
+            <div class="keys operators" id="keyEquals">&equals;</div>
         </div>
     </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
